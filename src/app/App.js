@@ -6,7 +6,6 @@ import CrewCollection from "../components/CrewCollection";
 import Utility from "../components/Utility";
 import Team from "../components/Team";
 import Footer from "../components/Footer";
-import TypesNFT from "../components/TypesNFT";
 import Like from "../components/Like";
 import ScrollToTop from "../components/ScrollToTop";
 import Signup from "../components/Signup";
@@ -53,7 +52,6 @@ function App () {
 			<About/>
 			<CrewCollection/>
 			<Utility/>
-			<TypesNFT/>
 			<Team/>
 			<Like/>
 			<Signup/>
