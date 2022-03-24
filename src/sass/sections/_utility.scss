@@ -1,0 +1,38 @@
+.utility {
+  margin: 0;
+  background-image: url("../../assets/utility_background.svg");
+  background-size: cover;
+  height: 56vw;
+  text-align: center;
+  .utility-title {
+    font-size: 3vw;
+    padding-top: 3vw;
+    color: aqua;
+  }
+  .utility-tooltip1 {
+    position: absolute;
+    top: 9vw;
+    left: 72vw;
+    .tootltip1 {
+      position: relative;
+      height: 18vw;
+      width: 20vw;
+    }
+    .tooltip1-title {
+      position: absolute;
+      top: 4vw;
+      color: aqua;
+      font-size: 1.2vw;
+    }
+    .tooltip1-description {
+      position: absolute;
+      top: 7vw;
+      color: aqua;
+      font-size: 1vw;
+      font-family: "Open Sans", serif;
+      font-weight: 300;
+      line-height: 1.2;
+      padding: 5px;
+    }
+  }
+}
