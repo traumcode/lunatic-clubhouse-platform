@@ -4,6 +4,7 @@ import Home from "../components/Home";
 import About from "../components/About";
 import CrewCollection from "../components/CrewCollection";
 import Utility from "../components/Utility";
+import Departments from "../components/Departments";
 import Team from "../components/Team";
 import Footer from "../components/Footer";
 import Like from "../components/Like";
@@ -28,7 +29,7 @@ function App () {
 				reset: false,
 			});
 			sr.reveal(
-				`nav,.home,.releases,.crew-collection,.utility,.free,.clients,.super-rare,.like,.signup,footer`,
+				`nav,.home,.releases,.crew-collection,.utility,.departments,.free,.clients,.super-rare,.like,.signup,footer`,
 				{
 					interval: 500,
 				}
@@ -52,6 +53,7 @@ function App () {
 			<About/>
 			<CrewCollection/>
 			<Utility/>
+			<Departments/>
 			<Team/>
 			<Like/>
 			<Signup/>

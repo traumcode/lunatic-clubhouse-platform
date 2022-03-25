@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
-
 .releases {
   margin:0;
   background-image: url("../../assets/start_background.png");
@@ -16,13 +15,16 @@
     left: 15%;
     div.about-text {
       position: absolute;
-      font-size: 2vw;
       top: 15vw;
       left: 10vw;
       padding: 2vw;
       right: 10vw;
       text-align: center;
       color: aqua;
+      .about-title {
+        font-size: 1.9vw;
+        text-align: center;
+      }
       .about-description {
         font-family: "Open Sans", serif;
         font-weight: 300;
