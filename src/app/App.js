@@ -1,24 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Home from "../components/Home";
 import About from "../components/About";
 import CrewCollection from "../components/CrewCollection";
 import Utility from "../components/Utility";
 import Departments from "../components/Departments";
-import Team from "../components/Team";
-import Footer from "../components/Footer";
-import Like from "../components/Like";
+import OurStory from "../components/OurStory";
+import RoadMap from "../components/RoadMap";
+import TeamForce from "../components/TeamForce";
+import Vote from "../components/Vote";
 import ScrollToTop from "../components/ScrollToTop";
-import Signup from "../components/Signup";
 import scrollreveal from "scrollreveal";
 import "../sass/index.scss";
-
+import JoinUs from "../components/JoinUs";
 
 function App () {
-	const [ theme, setTheme ] = useState("dark");
-	const changeTheme = () => {
-		theme === "dark" ? setTheme("light") : setTheme("dark");
-	};
 
 	useEffect(() => {
 		const registerAnimations = () => {
@@ -29,7 +25,7 @@ function App () {
 				reset: false,
 			});
 			sr.reveal(
-				`nav,.home,.releases,.crew-collection,.utility,.departments,.free,.clients,.super-rare,.like,.signup,footer`,
+				`nav,.home,.releases,.crew-collection,.utility,.departments,.our-story,.road-map,.team-force,.vote,.join-us`,
 				{
 					interval: 500,
 				}
@@ -37,6 +33,7 @@ function App () {
 		};
 		registerAnimations();
 	}, []);
+
 
 	window.setTimeout(() => {
 		const home = document.getElementsByClassName("home");
@@ -46,18 +43,19 @@ function App () {
 	}, 1500);
 
 	return (
-		<div data-theme={theme} className="app-container">
+		<div className="app-container">
 			<ScrollToTop/>
-			<Navbar changeTheme={changeTheme} currentTheme={theme}/>
+			<Navbar/>
 			<Home/>
 			<About/>
 			<CrewCollection/>
 			<Utility/>
 			<Departments/>
-			<Team/>
-			<Like/>
-			<Signup/>
-			<Footer/>
+			<OurStory/>
+			<RoadMap/>
+			<TeamForce/>
+			<Vote/>
+			<JoinUs/>
 		</div>
 	);
 }

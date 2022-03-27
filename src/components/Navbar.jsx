@@ -1,8 +1,6 @@
 import React, {useState} from "react";
 import {MdClose} from "react-icons/md";
 import {FaTwitter} from "react-icons/fa";
-import {BsSun} from "react-icons/bs";
-import {BsFillMoonFill} from "react-icons/bs";
 import {FaGitter} from "react-icons/fa";
 
 export default function Navbar(props) {
@@ -52,7 +50,7 @@ export default function Navbar(props) {
                         <a href="#signup" style={{width: '170%', color: 'aqua'}}>CONNECT WALLET</a>
                     </li>
                     <li className='twitter-icon'>
-                        <FaTwitter />
+                        <FaTwitter/>
                     </li>
                 </ul>
             </div>

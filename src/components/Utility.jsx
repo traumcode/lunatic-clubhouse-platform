@@ -15,7 +15,7 @@ export default function Utility(props) {
     return (
         <div className='utility'>
             <UtilityItem className='utility-item'/>
-            <h1 className='utility-title'>Utility</h1>
+            <h1 className='utility-title'>UTILITY</h1>
             <div className='utility-tooltip1'>
                 <Tooltip1_1 className='tootltip1_1'/>
                 <Tooltip1 className='tootltip1'/>

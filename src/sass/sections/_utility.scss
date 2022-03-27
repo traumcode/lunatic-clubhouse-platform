@@ -1,9 +1,11 @@
 .utility {
   margin: 0;
-  background-image: url("../../assets/utility_background.svg");
+  background-image: url("../../assets/svgs/utility_background.svg");
   background-size: cover;
   height: 56vw;
   text-align: center;
+  border-top: 1px solid aqua;
+  border-bottom: 1px solid aqua;
   .utility-item {
     position: absolute;
     top: 12vw;
@@ -13,7 +15,7 @@
   }
   .utility-title {
     font-size: 3vw;
-    padding-top: 3vw;
+    padding-top: 4vw;
     color: aqua;
   }
   .utility-tooltip1 {

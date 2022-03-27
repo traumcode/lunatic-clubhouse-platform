@@ -8,11 +8,11 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
+  border-bottom: 1px solid aqua;
 
   .departments-title {
     font-size: 3vw;
-    padding-top: 3vw;
+    padding-top: 4vw;
     color: aqua;
     margin-bottom: 10vw;
   }

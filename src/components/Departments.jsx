@@ -7,7 +7,7 @@ export default function Departments(props) {
 
     return (
         <div className='departments'>
-            <h1 className='departments-title'>Departments</h1>
+            <h1 className='departments-title'>DEPARTMENTS</h1>
             <Accordion flush>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header><h1 className='accordion-title'>Security</h1></Accordion.Header>
