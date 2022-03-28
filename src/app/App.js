@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
 import Home from "../components/Home";
 import About from "../components/About";
@@ -9,12 +9,15 @@ import OurStory from "../components/OurStory";
 import RoadMap from "../components/RoadMap";
 import TeamForce from "../components/TeamForce";
 import Vote from "../components/Vote";
+import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
 import scrollreveal from "scrollreveal";
 import "../sass/index.scss";
 import JoinUs from "../components/JoinUs";
+import Discord from '../assets/n__discord.png'
 
 function App () {
+
 
 	useEffect(() => {
 		const registerAnimations = () => {
@@ -25,7 +28,7 @@ function App () {
 				reset: false,
 			});
 			sr.reveal(
-				`nav,.home,.releases,.crew-collection,.utility,.departments,.our-story,.road-map,.team-force,.vote,.join-us`,
+				`nav,.home,.releases,.crew-collection,.utility,.departments,.our-story,.road-map,.team-force,.vote,.join-us,.footer`,
 				{
 					interval: 500,
 				}
@@ -44,6 +47,7 @@ function App () {
 
 	return (
 		<div className="app-container">
+			<a href='https://discord.gg/NQWP7R5n'><img src={Discord} alt='discord' className='discord-icon'/></a>
 			<ScrollToTop/>
 			<Navbar/>
 			<Home/>
@@ -56,6 +60,7 @@ function App () {
 			<TeamForce/>
 			<Vote/>
 			<JoinUs/>
+			<Footer/>
 		</div>
 	);
 }

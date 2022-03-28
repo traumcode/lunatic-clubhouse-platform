@@ -7,7 +7,7 @@ import Photo4 from "../assets/teamNFTs/nft4.png"
 
 export default function TeamForce(props) {
     return (
-        <div className='team-force'>
+        <div className='team-force' id='teamforce'>
             <h1 className='team-force-title'>TEAM FORCE</h1>
             <div className='team-force-container'>
                 <div className='team-force-member-container'>

@@ -1,10 +1,10 @@
 import React from "react";
 import {ReactComponent as AboutFrame} from "../assets/svgs/about_frame_svg2.svg";
 
-
 export default function About() {
+
     return (
-        <div className="releases">
+        <div className="releases" id='about'>
             <div className="release">
                 <div className='about-frame'>
                     <AboutFrame />

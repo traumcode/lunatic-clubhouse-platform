@@ -4,11 +4,12 @@ import Photo1 from '../assets/stories/01.jpeg';
 import Photo2 from '../assets/stories/02.png';
 import Photo3 from '../assets/stories/03.jpeg';
 import Photo4 from '../assets/stories/04.jpeg';
+import Photo5 from '../assets/stories/05.png';
 import {ReactComponent as Button} from "../assets/stories/ourStory_buton_dr.svg";
 import {MdPlayArrow} from 'react-icons/md'
 
 export default function OurStory(props) {
-    const photos = [Photo1, Photo2, Photo3, Photo4]
+    const photos = [Photo1, Photo2, Photo3, Photo4, Photo5]
     const texts = [
     "                    The Beginnings\n" +
     "                    The Moon is grey and cold. The wind blows as a lunar sandstorm forms. All of a sudden three mysterious, hooded figures appear. They are walking through the wind and dust, moving steadily, but with a clear goal in sight. Having observed some lights in the distance, the figures agree that it resembles a metropolis…the TerraVerse, an intergalactic world that is continuously expanding. New species of LUNAtics are starting to populate this city, such as the Skelly Punks, who are searching for treasures, Goochies who are fighting for their lands, Puffins are at war with Eels, working on their mental health and Crunks are preparing for the zombie apocalypse. These are just a few of the species of LUNAtics that have begun to populate this new world.\n" +
@@ -57,14 +58,17 @@ export default function OurStory(props) {
         "\n" +
         "As you approach the entrance, you instantly notice some of the best scents and perfumes across the TerraVerse.\n" +
         "\n" +
-        "As you look past the entrance and see the colourful and vibrant interior of this building, you can’t help but ask yourself what sort of activities happen inside there. Why not come inside and see for yourself? But before you enter, you’ll have to get past the Bouncers branch of the security department, who make sure that everyone is safe and everything is smooth inside the Lunatic Clubhouse."]
+        "As you look past the entrance and see the colourful and vibrant interior of this building, you can’t help but ask yourself what sort of activities happen inside there. Why not come inside and see for yourself? But before you enter, you’ll have to get past the Bouncers branch of the security department, who make sure that everyone is safe and everything is smooth inside the Lunatic Clubhouse.", "This is one of the most important locations in the clubhouse where one may find themselves. The Lunatic Council brings together members of the Council and the Dao to consider the Club's future.\n" +
+        "\n" +
+        "The Lunatic Guards only admit members who have completed the DAO's entrance requirements. As a result, it is one of the most mysterious chambers. Once you've been granted admission to this area, you're not allowed to talk about what happens there or what new ideas come through.\n" +
+        "\n" +
+        "The meetings that will be held here were thoroughly considered during the design process. This amphitheatre design allows all members to be seen and heard by everyone in the room, ensuring optimal productivity and output from the meeting."]
 
     let [ index, setIndex] = useState(0)
     const [ photo, setPhoto ] = useState(photos[0]);
     const [ text, setText ] = useState(texts[0])
 
 const handleChangeIndex = () => {
-
     if(index === photos.length-1){
         setIndex(0)
         setPhoto(photos[0])
@@ -80,7 +84,7 @@ const handleChangeIndex = () => {
 
 }
     return (
-        <div className='our-story'>
+        <div className='our-story' id='story'>
             <h1 className='our-story-title'>OUR STORY</h1>
             <div className='our-story-grid'>
                 <OurS className='our-story-frame'/>

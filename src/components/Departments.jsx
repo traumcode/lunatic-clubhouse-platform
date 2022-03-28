@@ -6,7 +6,7 @@ import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 export default function Departments(props) {
 
     return (
-        <div className='departments'>
+        <div className='departments' id='departments'>
             <h1 className='departments-title'>DEPARTMENTS</h1>
             <Accordion flush>
                 <Accordion.Item eventKey="0">

@@ -13,7 +13,7 @@ import {ReactComponent as UtilityItem} from "../assets/svgs/utility_item.svg";
 
 export default function Utility(props) {
     return (
-        <div className='utility'>
+        <div className='utility' id='utility'>
             <UtilityItem className='utility-item'/>
             <h1 className='utility-title'>UTILITY</h1>
             <div className='utility-tooltip1'>

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useRef, useState} from "react";
 import {MdClose} from "react-icons/md";
 import {FaTwitter} from "react-icons/fa";
 import {FaGitter} from "react-icons/fa";
@@ -31,20 +31,20 @@ export default function Navbar(props) {
                         <a href="#departments" style={{width: '390%'}}>DEPARTMENTS</a>
                     </li>
                     <li>
-                        <a href="#roadmap">OUR STORY</a>
+                        <a href="#story">OUR STORY</a>
                     </li>
                     <li className="brand">
                     </li>
                     <li>
                     </li>
                     <li>
-                        <a href="#roadmap">ROAD MAP</a>
+                        <a href="#road">ROAD MAP</a>
                     </li>
                     <li>
-                        <a href="#roadmap">TEAM FORCE</a>
+                        <a href="#teamforce">TEAM FORCE</a>
                     </li>
                     <li>
-                        <a href="#roadmap">VOTE</a>
+                        <a href="#vote">VOTE</a>
                     </li>
                     <li>
                         <a href="#signup" style={{width: '170%', color: 'aqua'}}>CONNECT WALLET</a>

@@ -23,6 +23,7 @@ nav {
       color:white!important;
     }
     .links {
+      color: white;
       list-style-type: none;
       display: grid;
       grid-template-columns: 3fr 3fr 3fr 4fr 7fr 3fr 3fr 3fr 4fr 1fr;
@@ -39,6 +40,7 @@ nav {
         margin-right: -27px;
       }
       li {
+        cursor: pointer;
         .dark {
           color: black;
         }

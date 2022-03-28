@@ -6,7 +6,7 @@ import {ReactComponent as Circle4} from "../assets/svgs/road_map.svg";
 
 export default function RoadMap(props) {
     return (
-        <div className='road-map'>
+        <div className='road-map' id='road'>
             <h1 className='road-map-title'>ROAD MAP</h1>
             <div className='road-map-content'>
                 <div className='circle-container'>

@@ -42,6 +42,13 @@ h2 {
   font-weight: 100;
 }
 
+.discord-icon {
+  position: fixed;
+  bottom: 4vw;
+  left: 5vw;
+  z-index: 10;
+  cursor: pointer;
+}
 
 .app-container {
   background-color: var(--background);
