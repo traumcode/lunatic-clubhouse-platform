@@ -4,6 +4,7 @@ import Photo1 from "../assets/teamNFTs/nft1.png"
 import Photo2 from "../assets/teamNFTs/nft2.png"
 import Photo3 from "../assets/teamNFTs/nft3.png"
 import Photo4 from "../assets/teamNFTs/nft4.png"
+import Photo5 from "../assets/teamNFTs/nft5.png"
 
 export default function TeamForce(props) {
     return (

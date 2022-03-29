@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../assets/svgs/logo_1@2x.png'
 
 
+
 export default function Footer(props) {
     return (
         <footer className="footer">
@@ -47,11 +48,11 @@ export default function Footer(props) {
 
                     <ul className="nav__ul">
                         <li>
-                            <a href="#">Privacy Policy</a>
+                            <a href="/privacy">Privacy Policy</a>
                         </li>
 
                         <li>
-                            <a href="#">Terms of Use</a>
+                            <a href="/terms">Terms of Use</a>
                         </li>
 
                         <li>
@@ -62,10 +63,10 @@ export default function Footer(props) {
             </ul>
 
             <div className="legal">
-                <p>&copy; 2019 Something. All rights reserved.</p>
+                <p>&copy; 2022 Lunatic Clubhouse. All rights reserved.</p>
 
                 <div className="legal__links">
-                    <span>Made with <span className="heart">♥</span> remotely from Anywhere</span>
+                    <span>Made with <span className="heart">♥</span> </span>
                 </div>
             </div>
         </footer>
